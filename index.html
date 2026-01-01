@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="title" content="NO STEALING ZONE">
+<meta name="description" content="Warning: Stealing is for losers! Keep your hair and stay honest at the No Stealing Zone.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourwebsite.com/">
+<meta property="og:title" content="NO STEALING ZONE">
+<meta property="og:description" content="Warning: Stealing is for losers! Keep your hair and stay honest at the No Stealing Zone.">
+<meta property="og:image" content="https://images.spinningline.ru/00171914_LARGE-001.jpg">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://yourwebsite.com/">
+<meta property="twitter:title" content="NO STEALING ZONE">
+<meta property="twitter:description" content="Warning: Stealing is for losers! Keep your hair and stay honest at the No Stealing Zone.">
+<meta property="twitter:image" content="https://images.spinningline.ru/00171914_LARGE-001.jpg">
+
+<link rel="icon" type="image/jpeg" href="https://images.spinningline.ru/00171914_LARGE-001.jpg">
+    <style>
+        body {
+            background-color: #000;
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+            color: #FFFF00;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 5px;
+            cursor: crosshair;
+            overflow-x: hidden;
+        }
+
+        #main-table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border: 8px ridge #808080;
+            background-color: #C0C0C0;
+            color: #000;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+            padding: 10px;
+            border-bottom: 5px groove #eee;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Impact", Charcoal, sans-serif;
+            font-size: clamp(25px, 8vw, 45px);
+            color: white;
+            text-shadow: 3px 3px #000;
+            margin: 0;
+            letter-spacing: 2px;
+            font-style: italic;
+        }
+
+        .marquee-top {
+            background: #f0f;
+            color: #fff;
+            font-weight: bolder;
+            border-bottom: 3px solid #000;
+            font-size: 14px;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            flex: 1;
+            min-width: 160px;
+            background: #000080;
+            padding: 10px;
+            color: gold;
+            border-right: 4px inset #fff;
+            text-align: center;
+        }
+
+        nav a {
+            display: block;
+            color: #fff;
+            background: #ff0000;
+            margin: 10px 0;
+            padding: 8px;
+            text-decoration: none;
+            border: 3px outset #fff;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background: #ffff00;
+            color: #000;
+            border-style: inset;
+        }
+
+        main {
+            flex: 3;
+            min-width: 300px;
+            padding: 15px;
+            background: #fff;
+            border: 5px inset #808080;
+            box-sizing: border-box;
+        }
+
+        .under-construction {
+            background: yellow;
+            border: 4px dashed black;
+            padding: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .blink {
+            animation: blinker 0.6s step-start infinite;
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+
+        .stolen-item {
+            border: 2px solid red;
+            background: #ffe6e6;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .btn-yes { background: #f00; color: #fff; font-size: 18px; font-weight: bold; cursor: help; padding: 10px; width: 80%; margin: 5px; }
+        .btn-no { background: #0f0; color: #000; font-size: 18px; font-weight: bold; padding: 10px; width: 80%; margin: 5px; }
+
+        footer {
+            background: #808080;
+            padding: 15px;
+            border-top: 5px ridge #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .webring {
+            border: 2px solid blue;
+            padding: 5px;
+            display: inline-block;
+            background: #fff;
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+
+        #police-alert {
+            display: none;
+            position: fixed;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+            background: #000080;
+            color: white;
+            border: 10px double red;
+            padding: 10px;
+            z-index: 9999;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .gif-container {
+            margin: 10px 0;
+        }
+
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            .wrapper {
+                flex-direction: column;
+            }
+            nav {
+                border-right: none;
+                border-bottom: 4px inset #fff;
+            }
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+        ::-webkit-scrollbar { width: 15px; }
+        ::-webkit-scrollbar-track { background: #ff00ff; }
+        ::-webkit-scrollbar-thumb { background: #00ffff; border: 2px solid #000; }
+    </style>
+</head>
+<body>
+
+    <div id="main-table">
+        <header>
+            <h1><<< NO THIEVES ALLOWED >>></h1>
+            <p style="color: black; background: white; display: inline-block; padding: 2px; font-size: 10px;">Best viewed in Netscape Navigator</p>
+        </header>
+
+        <div class="marquee-top">
+            <marquee direction="right" scrollamount="12">!!! WARNING !!! STEALING IS FOR LOSERS !!! DONT BE A LOSER !!! WARNING !!!</marquee>
+        </div>
+
+        <div class="wrapper">
+            <nav>
+                <div class="gif-container">
+                    <img src="https://i.imgur.com/rYrrSjL.gif" alt="fire gif" width="80">
+                </div>
+                <p><b>-- MENU --</b></p>
+                <a href="#">HOME PAGE</a>
+                <div class="gif-container">
+                    <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeDdpZnV4YnlkMWpyaWNnZm82NDRyenU4bDN4bnNldDduZnJ3aDk4YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ErmHaZag0DVXa/200w.gif" alt="eye gif" width="60">
+                </div>
+            </nav>
+
+            <main>
+                <div class="under-construction">
+                    <img src="https://i.imgur.com/rYrrSjL.gif" alt="fire" width="30">
+                    &nbsp; PAGE UNDER CONSTRUCTION 1999-2026 &nbsp;
+                    <img src="https://i.imgur.com/rYrrSjL.gif" alt="fire" width="30">
+                </div>
+
+                <h2 style="background: navy; color: white; padding: 5px; font-size: 18px; border: 2px outset #fff;">STORY OF A THIEF:</h2>
+                <div class="stolen-item">
+                    <p>Once there was a man named <b>Steely Joe</b>. He took a candy bar without paying. 
+                    Suddenly, his <span class="blink" style="color:red; font-size: 22px;">HAIR FELL OUT!</span></p>
+                    <p>Don't let this happen to you. Keep your hair. Don't steal.</p>
+                </div>
+
+                <div style="text-align: center; margin: 20px 0;">
+                    <img src="https://64.media.tumblr.com/6aea4e8dfaa4b8104d1b1d520e563249/2978cc05b820fd39-22/s640x960/ce1c16bf51c93505345154fb7c7485ba395c6bfd.gif" alt="retro divider" style="width: 100%; max-width: 500px; height: auto;">
+                </div>
+
+                <div style="text-align: center;">
+                    <h3 class="blink" style="color: #ff00ff; background: #000; display: inline-block; padding: 5px;">ARE YOU GOING TO STEAL TODAY?</h3><br>
+                    <button class="btn-yes" onclick="alertThief(true)">I MIGHT...</button><br>
+                    <button class="btn-no" onclick="alertThief(false)">NEVER!!</button>
+                    <br><br>
+                </div>
+
+                <p style="font-size: 10px; font-style: italic; border-top: 1px solid #ccc; padding-top: 5px;">
+                    Disclaimer: This website is for educational purposes only. If you steal, we will tell your mom and the internet police.
+                </p>
+            </main>
+        </div>
+
+        <footer>
+            <div class="webring">
+                <b>Part of the "Honest Kids" Webring</b><br>
+                <a href="#">[Prev]</a> <a href="#">[Random]</a> <a href="#">[Next]</a>
+            </div>
+            
+            <table border="3" bgcolor="black" cellpadding="5" style="margin: 0 auto;">
+                <tr>
+                    <td style="color: lime; font-family: 'Courier New';">
+                        CRIMES PREVENTED: <br>
+                        <span style="font-size: 20px; font-weight: bold;">000000104</span>
+                    </td>
+                </tr>
+            </table>
+            
+            <div style="margin: 10px 0;">
+                <img src="https://via.placeholder.com/88x31?text=IE+6.0" alt="ie">
+                <img src="https://via.placeholder.com/88x31?text=NO+JAVA" alt="java">
+                <img src="https://via.placeholder.com/88x31?text=VAL+HTML" alt="valid">
+            </div>
+            
+            <p style="font-size: 9px; margin: 0;">Created by: "Marty2000" <br> Email: no-stealing@tsmarty.xyz</p>
+            <marquee behavior="scroll" direction="left" scrollamount="3" style="font-size: 10px; background: #000; color: #0f0; margin-top: 5px;">
+                SITE UPDATE: MARCH 2004 - ADDED MORE FIRE GIFS - STAY HONEST FOLKS!
+            </marquee>
+        </footer>
+    </div>
+
+    <div id="police-alert">
+        <div style="text-align: center;">
+            <h1 class="blink" style="font-size: clamp(40px, 15vw, 80px); color: yellow;">!!! BUSTED !!!</h1>
+            <p style="font-size: 24px; font-weight: bold;">THE INTERNET POLICE HAVE BEEN NOTIFIED!</p>
+            <div class="gif-container">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyNm0yOXM5dndmdzc4eW1tdnkyd2tqbDZ5bXQ5c2U4bmhueGhzaGVzeSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/r6FCAJvaBNYz6NtaJv/giphy.gif" alt="siren gif" width="200">
+            </div>
+            <br>
+            <button style="padding: 20px; background: white; color: black; font-weight: bold; border: 5px outset #808080; cursor: pointer;" onclick="hideAlert()">I SURRENDER</button>
+        </div>
+    </div>
+
+    <script>
+        function alertThief(bad) {
+            if(bad) {
+                document.getElementById('police-alert').style.display = 'block';
+                window.scrollTo(0, 0);
+            } else {
+                alert("GOOD CHOICE! YOU GET A GOLD STAR! ⭐");
+            }
+        }
+        function hideAlert() {
+            document.getElementById('police-alert').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
